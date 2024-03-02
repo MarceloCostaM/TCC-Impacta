@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alimentos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<h1>TCC IMPACTA </h1>
+
+<div id="breakfast" class="food-list">
+    <h1>Café da Manhã</h1>
+    <ul id="breakfast-list"></ul>
+</div>
+
+<div class="add-cdm-form">
+    <h2>Adicionar café da Manha</h2>
+    <form onsubmit="addFood(); return false;">
+        <label for="foodName">Nome do alimento:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="calories">Calorias:</label>
+        <input for="number" id="calories" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+</div>
+
+
+<script>
+    function toggleForm() {
+        var form = document.querySelector('.add-food-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function addFood() {
+        var meal = document.querySelector('.food-list:visible').id; 
+        var foodName = document.getElementById('foodName').value;
+        var calories = document.getElementById('calories').value;
+
+        var list = document.getElementById(meal + '-list');
+        var listItem = document.createElement('li');
+        listItem.textContent = foodName + ' - ' + calories + ' cal';
+        list.appendChild(listItem);
+
+        
+        document.getElementById('foodName').value = '';
+        document.getElementById('calories').value = '';
+
+        
+        toggleForm();
+    }
+</script>
+
+<h1>Almoço</h1>
+
+<div class="add-comida-form">
+    <h2>Adicionar Almoço</h2>
+    <form onsubmit="addFood(); return false;">
+        <label for="foodName">Nome do Alimento:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="calories">Calorias:</label>
+        <input type="number" id="calories" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+</div>
+
+
+
+<script>
+    function toggleForm() {
+        var form = document.querySelector('.add-food-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function addFood() {
+        var meal = document.querySelector('.food-list:visible').id; 
+        var foodName = document.getElementById('foodName').value;
+        var calories = document.getElementById('calories').value;
+
+        var list = document.getElementById(meal + '-list');
+        var listItem = document.createElement('li');
+        listItem.textContent = foodName + ' - ' + calories + ' cal';
+        list.appendChild(listItem);
+
+        
+        document.getElementById('foodName').value = '';
+        document.getElementById('calories').value = '';
+
+        
+        toggleForm();
+    }
+</script>
+
+
+<div id="Lanche" class="food-list">
+    <h1>Lanche</h1>
+    <ul id="Lanche"></ul>
+</div>
+
+<div class="add-lanche-form">
+    <h2>Adicionar Lanche</h2>
+    <form onsubmit="addFood(); return false;">
+        <label for="foodName">Nome do alimento:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="calories">Calorias:</label>
+        <input for="number" id="calories" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+</div>
+
+
+<script>
+    function toggleForm() {
+        var form = document.querySelector('.add-food-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function addFood() {
+        var meal = document.querySelector('.food-list:visible').id; 
+        var foodName = document.getElementById('foodName').value;
+        var calories = document.getElementById('calories').value;
+
+        var list = document.getElementById(meal + '-list');
+        var listItem = document.createElement('li');
+        listItem.textContent = foodName + ' - ' + calories + ' cal';
+        list.appendChild(listItem);
+
+        
+        document.getElementById('foodName').value = '';
+        document.getElementById('calories').value = '';
+
+        
+        toggleForm();
+    }
+</script>
+
+
+<h1>Jantar</h1>
+
+<div class="add-comida-form">
+    <h2>Adicionar Jantar</h2>
+    <form onsubmit="addFood(); return false;">
+        <label for="foodName">Nome do Alimento:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="calories">Calorias:</label>
+        <input type="number" id="calories" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+</div>
+
+
+
+<script>
+    function toggleForm() {
+        var form = document.querySelector('.add-food-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function addFood() {
+        var meal = document.querySelector('.food-list:visible').id; 
+        var foodName = document.getElementById('foodName').value;
+        var calories = document.getElementById('calories').value;
+
+        var list = document.getElementById(meal + '-list');
+        var listItem = document.createElement('li');
+        listItem.textContent = foodName + ' - ' + calories + ' cal';
+        list.appendChild(listItem);
+
+        
+        document.getElementById('foodName').value = '';
+        document.getElementById('calories').value = '';
+
+        
+        toggleForm();
+    }
+</script>
+
+
+
+</body>
+</html>

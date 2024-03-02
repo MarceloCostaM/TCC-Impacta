@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Usuário</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="user-form">
+    <h1>Criação de Usuário</h1>
+    <form id="userForm" onsubmit="createUser(); return false;">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Criar Usuário</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>
